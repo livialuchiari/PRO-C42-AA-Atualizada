@@ -150,7 +150,10 @@ class Game {
         var x = allPlayers[plr].positionX;
         var y = height - allPlayers[plr].positionY;
 
-        //currentlife
+
+        var currentlife = allPlayers[plr].life;
+
+        // current life 
 
         cars[index - 1].position.x = x;
         cars[index - 1].position.y = y;
