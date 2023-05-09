@@ -41,7 +41,7 @@ class Game {
     car2.addImage("car2", car2_img);
     car2.scale = 0.07;
 
-    car2.addimage("blast",blastImage);
+    //add imagem car2
 
     cars = [car1, car2];
 
@@ -151,12 +151,6 @@ class Game {
         var y = height - allPlayers[plr].positionY;
 
         //currentlife
-        var currentlife = allPlayers[plr].life;
-
-        if (currentlife>=0){
-          cars[index-1].changeImage("blast");
-          cars[index-1].scale = 0.3;
-        }
 
         cars[index - 1].position.x = x;
         cars[index - 1].position.y = y;
